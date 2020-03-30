@@ -1,0 +1,1134 @@
+@charset "UTF-8";
+/* line 1, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 4, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 2;
+}
+
+/* line 10, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 16, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 20, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.menu_link:hover {
+  text-decoration: none;
+  color: #f11331;
+}
+
+/* line 23, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 26, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 28, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.hambureger {
+  display: none;
+}
+
+/* line 31, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 37, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 41, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 47, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 53, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 62, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #f11331 0%, #db5466 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 76, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 80, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.promo_header {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 88, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 97, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.promo_descr {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 104, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #f11331 0%, #db5466 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 119, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.small_header {
+  display: block;
+  background-color: black;
+  width: 112px;
+  height: 24px;
+  margin: 0 auto;
+  padding: 2px 12px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 131, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.medium_header {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 139, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subtitle {
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 145, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 147, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 152, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #f11331;
+  border-radius: 100%;
+}
+
+/* line 161, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 163, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #f11331;
+  font-size: 17px;
+  font-weight: 400;
+  min-height: 41px;
+  margin-bottom: 3px;
+}
+
+/* line 170, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 176, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+/* line 180, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 182, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+}
+
+/* line 188, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/bg/mobile_screen_1.jpg") center center/cover no-repeat;
+}
+
+/* line 190, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/bg/mobile_screen_2.jpg") center center/cover no-repeat;
+}
+
+/* line 192, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/bg/mobile_screen_3.jpg") center center/cover no-repeat;
+}
+
+/* line 194, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/bg/mobile_screen_4.jpg") center center/cover no-repeat;
+}
+
+/* line 196, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/bg/mobile_screen_5.jpg") center center/cover no-repeat;
+}
+
+/* line 198, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/bg/mobile_screen_6.jpg") center center/cover no-repeat;
+}
+
+/* line 200, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 92px;
+}
+
+/* line 208, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 221, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.small_header_white {
+  display: block;
+  background-color: #fff;
+  width: 112px;
+  height: 24px;
+  margin: 0 auto;
+  padding: 2px 12px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 233, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.medium_header_white {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 241, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subtitle_white {
+  margin-top: 19px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 56px;
+}
+
+/* line 248, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.subtitle_black {
+  margin-top: 19px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 254, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+  z-index: -2;
+}
+
+/* line 261, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.choice .black_bg {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 499px;
+  background-color: #070716;
+  z-index: -1;
+}
+
+/* line 270, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.choice .img_car {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 274, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 276, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 278, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 280, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 284, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 288, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 294, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue.svg") center center/cover no-repeat;
+}
+
+/* line 303, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require_descr {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #f11331;
+}
+
+/* line 310, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require .warning .require_title {
+  color: #f11331;
+}
+
+/* line 314, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../icons/check_red.svg") center center/cover no-repeat;
+}
+
+/* line 316, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.map {
+  position: relative;
+  min-height: 717px;
+  padding: 49px 0;
+  background: url("../img/bg/map.jpg") center center/cover no-repeat;
+}
+
+/* line 321, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 324, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.watch_all {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 49px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  color: #f11331;
+  text-transform: uppercase;
+}
+
+/* line 336, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 339, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 342, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #f11331;
+  margin: 0 auto;
+}
+
+/* line 347, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 352, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 354, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 357, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 361, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 370, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_social_item span {
+  color: #f11331;
+}
+
+/* line 372, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 375, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 379, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 384, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 388, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 393, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #f11331;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 402, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 11, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+  }
+  /* line 13, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 16, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+    height: 260px;
+  }
+  /* line 20, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper {
+    padding-top: 20px;
+  }
+  /* line 22, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 20%;
+  }
+  /* line 24, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    width: 60%;
+  }
+  /* line 26, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 20%;
+    justify-content: center;
+  }
+  /* line 29, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) img {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 35, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_item {
+    padding-right: 14px;
+  }
+  /* line 37, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 9px;
+  }
+  /* line 40, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader img {
+    width: 100%;
+  }
+  /* line 42, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 44, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_phone {
+    font-size: 18px;
+  }
+  /* line 46, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+  }
+  /* line 51, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo {
+    padding-top: 140px;
+    min-height: 600px;
+  }
+  /* line 54, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 56, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 58, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_btn {
+    margin-top: 70px;
+  }
+  /* line 60, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_descr {
+    font-size: 15px;
+  }
+  /* line 63, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 66, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+    margin-top: 20px;
+  }
+  /* line 71, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .choice {
+    min-height: 600px;
+  }
+  /* line 74, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .choice .img_car img {
+    width: 85%;
+  }
+  /* line 76, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .map {
+    min-height: 550px;
+  }
+  /* line 78, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .map .watch_all {
+    bottom: 32px;
+  }
+  /* line 81, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_social {
+    margin: 5px auto 25px;
+  }
+  /* line 83, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_mobile {
+    margin: 15px auto 0;
+  }
+  /* line 85, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper {
+    flex-direction: column;
+  }
+  /* line 87, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 89, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    width: 100%;
+  }
+  /* line 91, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+  }
+  /* line 93, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) img {
+    display: inline;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 98, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s all;
+  }
+  /* line 110, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 112, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px auto;
+  }
+  /* line 116, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 118, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 126, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 134, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 136, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 138, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 140, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 143, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 145, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 148, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #fffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 156, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 163, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 166, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_block {
+    padding-left: 10%;
+  }
+  /* line 168, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_round {
+    align-self: center;
+    margin-right: 0;
+  }
+  /* line 171, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_subtitle {
+    min-height: 25px;
+  }
+  /* line 173, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 176, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 178, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 180, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  /* line 183, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 185, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  /* line 187, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_phone {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 11px;
+  }
+  /* line 192, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  /* line 197, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 93px 0 35px 0;
+  }
+  /* line 200, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 202, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  /* line 206, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  /* line 211, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+  }
+  /* line 215, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 217, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  /* line 221, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .menu_link {
+    display: block;
+  }
+  /* line 223, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .hamburger {
+    right: 20px;
+  }
+  /* line 225, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  /* line 227, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons .small_header {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+  /* line 230, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons .medium_header {
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 17px;
+  }
+  /* line 234, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_block {
+    margin-top: 26px;
+  }
+  /* line 236, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_round {
+    margin-right: 0;
+    width: 100px;
+    height: 100px;
+  }
+  /* line 240, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+    margin-top: 27px;
+  }
+  /* line 243, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .reasons_subtitle {
+    font-size: 16px;
+  }
+  /* line 246, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .mobile .small_header {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+  /* line 249, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .mobile .medium_header {
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 17px;
+  }
+  /* line 253, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .mobile .subtitle {
+    font-size: 15px;
+  }
+  /* line 255, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 17px;
+  }
+  /* line 259, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .choice .small_header_white {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+  /* line 262, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .choice .medium_header_white {
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 17px;
+  }
+  /* line 266, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .choice .subtitle_white {
+    font-size: 15px;
+    padding-bottom: 36px;
+  }
+  /* line 269, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .choice .subtitle_black {
+    font-size: 15px;
+  }
+  /* line 271, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .choice .black_bg {
+    height: 300px;
+    padding: 57px 0 138px 0;
+  }
+  /* line 275, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .require {
+    padding: 48px 0 54px 0;
+  }
+  /* line 277, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .require .small_header {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+  /* line 280, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .require .medium_header {
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 17px;
+  }
+  /* line 284, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .require_title {
+    font-size: 16px;
+  }
+  /* line 287, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .require_list li {
+    font-size: 15px;
+  }
+  /* line 289, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .require_descr {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  /* line 292, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .require_block {
+    margin: 15px 0;
+  }
+  /* line 296, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .map .small_header_white {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+  /* line 299, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .map .medium_header_white {
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 17px;
+  }
+  /* line 303, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .map .subtitle_white {
+    font-size: 15px;
+    padding-bottom: 36px;
+  }
+  /* line 306, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .map .watch_all {
+    font-size: 12px;
+  }
+  /* line 309, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer {
+    padding: 14px 0px 39px 0px;
+  }
+  /* line 311, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_divider {
+    width: 199px;
+    height: 3px;
+  }
+  /* line 314, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_links {
+    max-width: 320px;
+  }
+  /* line 316, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_links_main a {
+    font-size: 14px;
+  }
+  /* line 318, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_links_sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 322, D:/Coding/My projects/Петриченко/modul #2 Uber/sass/_media.sass */
+  .footer_links_sub a {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
